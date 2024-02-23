@@ -4,5 +4,5 @@ from Objects.Zork import Zork
 from Objects.Asteroid import Asteroid
 from Objects.Laser import Laser
 from Objects.Astronaut import Astronaut
-from Objects.Hud import Score
+from Objects.Hud import Score, Lives
 

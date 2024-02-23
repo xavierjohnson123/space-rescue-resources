@@ -1,7 +1,7 @@
 from GameFrame import Level
 from Objects.Ship import Ship
 from Objects.Zork import Zork
-from Objects.Hud import Score
+from Objects.Hud import Score, Lives
 from GameFrame.Globals import Globals
 
 class GamePlay(Level):
@@ -20,3 +20,6 @@ class GamePlay(Level):
                            Globals.SCREEN_WIDTH/2 - 20, 20, 
                            str(Globals.SCORE))
         self.add_room_object(self.score)
+
+        self.lives = Lives(self, Globals.SCREEN_WIDTH - 150, 20)
+        self.add_room_object(self.lives)

@@ -22,16 +22,13 @@ class Ship(RoomObject):
 
         self.can_shoot = True
 
-        
     def key_pressed(self, key):
-        """
-        Respond to keypress up and down
-        """
+        
         
         if key[pygame.K_w]:
-            self.y_speed = -10
+            self.y -= 10
         elif key[pygame.K_s]:
-            self.y_speed = 10
+            self.y += 10    
         if key[pygame.K_SPACE]:
             self.shoot_laser()
 

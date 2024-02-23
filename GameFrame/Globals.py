@@ -5,7 +5,7 @@ class Globals:
     FRAMES_PER_SECOND = 30
 
     SCREEN_WIDTH = 1280
-    SCREEN_HEIGHT = 800
+    SCREEN_HEIGHT = 700
 
     SCORE = 0
 
